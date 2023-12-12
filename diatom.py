@@ -25,12 +25,12 @@ for i in range(0, 11):
         X = [x1, x2]
         print(X)
 
-        file = "/home/hfnl/qwq/O-dissociation/single-N/1-N/base/" + x1 + '-' + x2 + '/binding_energy'
+        file = "O-dissociation/single-N/1-N/base/" + x1 + '-' + x2 + '/binding_energy'
         mkdir(file)  
-        f = open('/home/hfnl/qwq/O-dissociation/single-N/1-N/base/' + x1 + '-' + x2 + '/INCAR', 'r')
+        f = open('O-dissociation/single-N/1-N/base/' + x1 + '-' + x2 + '/INCAR', 'r')
         lines = f.readlines()  
         # for line in f_origin:
-        f_new_incar = open('/home/hfnl/qwq/O-dissociation/single-N/1-N/base/' + x1 + '-' + x2 + '/binding_energy/INCAR', 'a')  
+        f_new_incar = open('O-dissociation/single-N/1-N/base/' + x1 + '-' + x2 + '/binding_energy/INCAR', 'a')  
         for a in range(21):
             f_new_incar.write(lines[a])
 
@@ -46,10 +46,10 @@ for i in range(0, 11):
             f_new_incar.write(lines[a])
 
 
-        f = open('/home/hfnl/qwq/O-dissociation/single-N/1-N/base/' + x1 + '-' + x2 + '/CONTCAR', 'r')
+        f = open('O-dissociation/single-N/1-N/base/' + x1 + '-' + x2 + '/CONTCAR', 'r')
         lines2 = f.readlines()  
         # for line in f_origin:
-        f_new_poscar = open('/home/hfnl/qwq/O-dissociation/single-N/1-N/base/' + x1 + '-' + x2 + '/binding_energy/POSCAR', 'a')  
+        f_new_poscar = open('O-dissociation/single-N/1-N/base/' + x1 + '-' + x2 + '/binding_energy/POSCAR', 'a')  
         for a in range(5):
             f_new_poscar.write(lines2[a])
         ele = ''
