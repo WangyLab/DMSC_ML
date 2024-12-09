@@ -1,2 +1,4 @@
-# 2D-ORR_ML
-二维双金属石墨烯材料的氧气解离反应过程的机器学习预测
+# Accelerated Design of Dual-Metal-Site Catalysts via Machine-Learning Prediction
+
+
+This project involves predictive modeling of the catalytic properties of Dual-Metal Site Catalysts (DMSCs) supported on nitrogen-doped graphene. The repository includes Python code for two models, a dataset, and example structures.
